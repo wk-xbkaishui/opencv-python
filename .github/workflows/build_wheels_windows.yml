@@ -23,10 +23,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ['3.13']
+        python-version: ['3.13t']
         platform: [x86, x64]
-        with_contrib: [0, 1]
-        without_gui: [0, 1]
+        with_contrib: [1]
+        without_gui: [0]
         build_sdist: [0]
     env:
       ACTIONS_ALLOW_UNSECURE_COMMANDS: true
@@ -91,10 +91,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ['3.13']
+        python-version: ['3.13t']
         platform: [x86, x64]
-        with_contrib: [0, 1]
-        without_gui: [0, 1]
+        with_contrib: [1]
+        without_gui: [0]
         build_sdist: [0]
     env:
       ACTIONS_ALLOW_UNSECURE_COMMANDS: true
